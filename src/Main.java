@@ -4,7 +4,7 @@ import java.util.Optional;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -61,7 +61,7 @@ public class Main {
         //System.out.println(allTDFWinnersTeamsCSV);
 
         Map<String, Long> winsByNationalityCounting = winsByNationalityCounting(winners);
-        //winsByNationalityCounting.entrySet().forEach(System.out::println);
+        winsByNationalityCounting.entrySet().forEach(System.out::println);
 
     }
 
@@ -188,16 +188,13 @@ public class Main {
         return winners.stream()
                 .map(Winner::getTeam)
                 .distinct()
-                .reduce("", (t1,t2) -> t1 + "," + t2);
+                .collect(joining(", "));
     }
 
 
     static Map<String, Long> winsByNationalityCounting(List<Winner> winners) {
         return winners.stream()
-                .collect(groupingBy(Winner::getNationality))
-                .entrySet()
-                .stream()
-                .collect(Collectors.toMap(Map.Entry::getKey, e -> (long) e.getValue().size()));
+                .collect(groupingBy(Winner::getNationality, counting()));
     }
 
 }

@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57a5fda9-cdcd-45b0-9ea5-0995ac07bbe8" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/Winner.java" afterDir="false" />
+    <list default="true" id="57a5fda9-cdcd-45b0-9ea5-0995ac07bbe8" name="Changes" comment="- Defined Winner class&#10;- Done first queries implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -69,11 +68,19 @@
       <option name="project" value="LOCAL" />
       <updated>1675424357291</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Defined Winner class&#10;- Done first queries implementation">
+      <created>1675501319348</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675501319348</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="- Defined Winner class&#10;- Done first queries implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Defined Winner class&#10;- Done first queries implementation" />
   </component>
 </project>
